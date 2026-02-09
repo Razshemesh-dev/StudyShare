@@ -26,6 +26,9 @@ header nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul {
