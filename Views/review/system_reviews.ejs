@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/buttons.css">
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/cards.css">
+    </head>
+    <body style="min-height: 100%; display: flex; flex-direction: column;">
+        <%- include('../partials/navbar') %>
+        
+        <div style="flex: 1;">
+            <h1>סקירת מערכות</h1>
+            <div class="container">
+                <button class="btn-a btn-add-review">
+                    <a class="btn-a" href="/add_review">הוסף סקירה למערכת</a>
+                </button> 
+
+                <main class="mainsection">
+                    <% if (typeof reviews === 'undefined' || reviews.length === 0) { %>
+                        <p>אין עדיין סקירות.</p>
+                    <% } else { %>
+                        <div id="reviews-list">
+                            <% reviews.forEach(review => { %>
+                                <div class="review-card">
+                                    <h2><%= review.tool_name %></h2>
+                                    <p><%= review.review_text %></p>
+                                    <p><strong>קטגוריה:</strong> <%= review.tool_category %></p>
+                                    <p><strong>דירוג:</strong> <%= review.rating %> ⭐</p>
+                                    <p><strong>מאת:</strong> <%= review.author_name %> | <%= new Date(review.created_at).toLocaleDateString('he-IL') %></p>
+                                    <% if (review.pros_cons) { %>
+                                        <div style="margin-top: 1rem; padding: 1rem; background-color: #f8f9fa; border-radius: 6px;">
+                                            <strong>יתרונות וחסרונות:</strong>
+                                            <p style="white-space: pre-line;"><%= review.pros_cons %></p>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                </main>
+            </div>
+        </div>
+
+        <%- include('../partials/footer') %>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyShare HomePage</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <%- include('partials/navbar') %>
+
+    <main>
+        <h1> ברוכים הבאים ל - StudyShare!</h1>
+        <div id="media_txt">
+            <section>
+                <p>💡 <b>StudyShare - הקהילה האקדמית שלך</b>
+               המקום שבו סטודנטים עוזרים לסטודנטים להצליח.<br>
+                📚 <b>שתפו את החומרים שלכם</b> - 
+                    הסיכומים שהשקעתם בהם עוזרים לאחרים!<br>
+                📝 <b>התכוננו נכון לבחינות</b> 
+                 <b>ולמדו מהניסיון של אחרים -</b> 
+                     ראו אילו כלים וטכנולוגיות באמת עובדים ועוזרים בקורסים שלכם.<br>
+            </section>
+
+<div class="video-container">
+  <video controls>
+    <source src="images/tqvpt-mbkhnym-1080-publer.io.mp4" type="video/mp4">
+    הדפדפן שלך לא תומך בנגן וידאו.
+  </video>
+</div>
+        </div>
+
+        <section id="sidebyside">
+            <section class="mainsection">
+                <h1>סיכומים</h1>
+                <article>
+                    <a href="/summaries_view">
+                        <h2>מאגר סיכומים לפי מוסדות וקורסים</h2>
+                        <p>בדף זה תמצאו סיכומים מסודרים לפי מוסדות לימוד, קורסים, מרצים וסמסטרים. </p>
+                        <p><br><b>למעבר לסיכומים לחצו כאן &rarr;</b></p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="mainsection">
+                <h1>סקירות מערכות</h1>
+                <article>
+                    <a href="/system_reviews"> 
+                        <h2>מה הסטודנטים חושבים על כלים דיגיטליים ואיזה כלי AI הכי מתאים?</h2>
+                        <p>סקירות וחוות דעת על מערכות כמו Moodle, Zoom, Canvas, Zotero ועוד. הכל מהעיניים של הסטודנטים.</p>
+                        <p><br><b>למעבר לסקירות לחצו כאן &rarr;</b></p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="mainsection">
+                <h1>שאלות ותשובות</h1>
+                <article>
+                    <a href="/search_questions">
+                        <h2>מאגר שאלות ממבחנים ותרגולים</h2>
+                        <p>מאות שאלות אמיתיות ממבחנים קודמים עם פתרונות. ניתן לחפש לפי קורס, מרצה או מוסד.</p>
+                        <p><br><b>למאגר השאלות לחצו כאן &rarr;</b></p>
+                    </a>
+                </article>
+            </section>
+
+            <section class="mainsection">
+                <h1>אודות האתר</h1>
+                <article>
+                    <a href="/aboutus">
+                         <h2>StudyShare למה?</h2>
+                        <p>רוצים לתרום לאתר? כנסו ותתרשמו מהחזון של האתר.</p>
+                        <p><br><b>למידע נוסף לחצו כאן &rarr;</b></p>
+                    </a>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+                <%- include('partials/footer') %>
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/register.css"/>
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <h1>הרשמה</h1>
+
+    <main class="auth auth--register">
+        <% if (typeof error !== 'undefined' && error) { %>
+            <p class="auth__error"><%= error %></p>
+        <% } %>
+
+        <% if (typeof registrationSuccess !== 'undefined' && registrationSuccess) { %>
+            <p class="auth__success">הרשמה הצליחה! כעת תוכל להתחבר.</p>
+        <% } %>
+
+        <form class="input_form" action="/save-user" method="POST" novalidate>
+            <p>
+                <label for="full_name">שם מלא *</label>
+                <input type="text" name="full_name" id="full_name" required placeholder="הכנס שם מלא" />
+            </p>
+            
+            <p>
+                <label for="email">אימייל *</label>
+                <input type="email" name="email" id="email" required placeholder="your@email.com" />
+            </p>
+
+            <p>
+                <label for="username">שם משתמש *</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    minlength="3"
+                    required
+                    placeholder="בחר שם משתמש (לפחות 3 תווים)"
+                />
+            </p>
+
+            <p>
+                <label for="password">סיסמה *</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    minlength="6"
+                    required
+                    placeholder="לפחות 6 תווים"
+                />
+            </p>
+
+            <p>
+                <label for="education_institute">מוסד לימודים</label>
+                <input
+                    type="text"
+                    name="education_institute"
+                    id="education_institute"
+                    placeholder="שם המוסד האקדמי"
+                />
+            </p>
+
+            <button type="submit" class="btn-primary">צור חשבון</button>
+        </form>
+
+        <p class="auth__switch">
+            כבר רשומים?
+            <a class="register-login" href="/login">להתחברות</a>
+        </p>
+    </main>
+
+    <div id="registration-status" data-success="<%= registrationSuccess ? 'true' : 'false' %>"></div>
+
+    <%- include('../partials/footer') %>
+    <script src="/JS/auth.js" defer></script>
+</body>
+</html>

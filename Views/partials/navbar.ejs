@@ -1,0 +1,20 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="/summaries_view">סיכומים</a></li>
+            <li><a href="/system_reviews">סקירת מערכות</a></li>
+            <li><a href="/search_questions">שאלות ממבחנים</a></li>
+            <li><a href="/Support">רשימת כלי עזר לסטודנט</a></li>
+            <% if (!isLoggedIn) { %>
+                <li><a href="/login">איזור אישי</a></li>
+            <% } else { %>
+                <li><a href="/average_score">ממוצע ציונים</a></li>
+                <li><a href="/checklist">רשימת משימות</a></li>
+                <li><a href="/quiz">מבחן</a></li>
+                <li><a href="/profile">שלום <%= userName %></a></li>
+                <li><a href="/logout">התנתק</a></li>
+            <% } %>
+        </ul>
+    </nav>
+    <section><a href="/"><img id="logo" src="/images/StudyshareLogo.png" alt="StudyShare Logo"></a></section>
+</header>

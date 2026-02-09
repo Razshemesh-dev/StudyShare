@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>אודות StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+  </head>
+
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h1>אודות StudyShare</h1>
+
+    <main class="about-container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2>ברוכים הבאים ל-StudyShare</h2>
+          <p class="hero-subtitle">קהילה אקדמית המתמקדת בשתיפת ידע וחומרי לימוד</p>
+          <p class="hero-description">
+            StudyShare היא פלטפורמה ממוכנת המאפשרת לסטודנטים, לגשת ולהפיק תועלת מחומרי לימוד איכותיים בסביבה קהילתית.
+          </p>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="about-section mission-section">
+        <div class="section-content">
+          <h2>🎯 החזון והמשימה שלנו</h2>
+          <div class="mission-grid">
+            <div class="mission-card">
+              <h3>החזון</h3>
+              <p>להנגיש מידע אקדמי איכותי לכל סטודנט בעולם, ללא תלות במקום מגוריו או הרקע שלו.</p>
+            </div>
+            <div class="mission-card">
+              <h3>המשימה</h3>
+              <p>לבנות קהילה דינמית של משתמשים העוזרים אחד לשני בדרך של שיתוף ידע, חומרים וחוות דעות על כלים דיגיטליים.</p>
+            </div>
+            <div class="mission-card">
+              <h3>הערכים שלנו</h3>
+              <p>שקיפות, איכות, שיתופיות, נגישות וחדשנות בתחום הטכנולוגיה החינוכית.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="about-section features-section">
+        <h2>📚 מה אנחנו מציעים?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>סיכומים מסודרים</h3>
+            <p>מאגר סיכומים ממוקד לפי קורסים, מוסדות לימוד, מרצים וסמסטרים. כל סיכום מאומת ואיכותי.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">❓</div>
+            <h3>שאלות ותשובות</h3>
+            <p>מאות שאלות ממבחנים קודמים עם פתרונות מפורטים. חפשו לפי קורס, מרצה או רמת קושי.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>סקירות מערכות</h3>
+            <p>חוות דעות סטודנטים על כלים דיגיטליים, AI ותכנות למידה. עזרו לאחרים לבחור את הכלי הנכון.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>קהילה תומכת</h3>
+            <p>פלטפורמה לשיתוף ידע בין סטודנטים, דיונים ותמיכה הדדית לאורך השנה הלימודית.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>חיפוש מתקדם</h3>
+            <p>חפשו לפי מוסד, קורס, סמסטר, שנה וכותר. המערכת תמצא בדיוק את מה שחיפשתם.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="about-section how-it-works">
+        <h2>⚙️ איך זה עובד?</h2>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>הרשמה וכניסה</h3>
+            <p>הירשמו בקלות עם אימייל. בדקו את דוא"ל שלכם והתחילו!</p>
+          </div>
+          <div class="step-arrow">←</div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>חיפוש וגישה</h3>
+            <p>חפשו סיכומים, שאלות וסקירות לפי מוסד, קורס וסמסטר.</p>
+          </div>
+          <div class="step-arrow">←</div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>שיתוף תוכן</h3>
+            <p>הוסיפו סיכומים משלכם, שיתפו שאלות וכתבו סקירות על כלים.</p>
+          </div>
+          <div class="step-arrow">←</div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>תרומה לקהילה</h3>
+            <p>עזרו לסטודנטים אחרים, קבלו משוב וצברו נקודות תרומה!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Team Section -->
+      <section class="about-section join-team-section">
+        <h2>👥 הצטרפות לצוות</h2>
+        <p class="section-subtitle">אנחנו מחפשים אנשים שרוצים לעזור לקהילה האקדמית. אם אתם מעוניינים להיות חלק מהצוות, מלאו את הטופס הבא:</p>
+        
+        <form class="join-team-form" method="POST" action="/submit-team-application">
+          <div class="form-group">
+            <label for="full_name">שם מלא *</label>
+            <input type="text" id="full_name" name="full_name" required placeholder="הכנס/י שמך המלא" />
+          </div>
+
+          <div class="form-group">
+            <label for="email_address">כתובת אימייל *</label>
+            <input type="email" id="email_address" name="email_address" required placeholder="הכנס/י אימייל" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest_area">תחום עניין *</label>
+            <input type="text" id="interest_area" name="interest_area" required placeholder="לדוגמה: מדעי מחשב, מתמטיקה, כלכלה" />
+          </div>
+
+          <div class="form-group">
+            <label for="about_you">ספר/י על עצמך *</label>
+            <textarea id="about_you" name="about_you" required placeholder="למה אתה רוצה להצטרף לצוות? מה התחומים שבהם יכול/ה אתה לתרום?" rows="5"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="type_of_degree">סוג תואר *</label>
+              <select id="type_of_degree" name="type_of_degree" required>
+                <option value="">בחר סוג תואר</option>
+                <option value="תואר ראשון">תואר ראשון</option>
+                <option value="תואר שני">תואר שני</option>
+                <option value="דוקטור">דוקטור</option>
+                <option value="אחר">אחר</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="degree_title">שם התואר/המקצוע *</label>
+              <input type="text" id="degree_title" name="degree_title" required placeholder="לדוגמה: מדעי מחשב, ניהול" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hours_per_week">שעות זמינות בשבוע *</label>
+            <select id="hours_per_week" name="hours_per_week" required>
+              <option value="">בחר מספר שעות</option>
+              <option value="1-5">1-5 שעות</option>
+              <option value="5-10">5-10 שעות</option>
+              <option value="10-15">10-15 שעות</option>
+              <option value="15-20">15-20 שעות</option>
+              <option value="20+">20+ שעות</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">שלח הגשה</button>
+        </form>
+      </section>
+
+     
+      <!-- Contact Section -->
+      <section class="about-section contact-section">
+        <h2>📞 צור קשר</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>אימייל</h3>
+            <p><a href="mailto:info@studyshare.com">info@studyshare.com</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>

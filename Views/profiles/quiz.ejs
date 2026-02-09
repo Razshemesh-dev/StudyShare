@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בוחן בתכנות WEB - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <h1>בוחן על תכנות WEB</h1>
+
+    <main>
+        <form id="quiz" class="quiz-form">
+            <div class="q">
+                <p>1) מה תפקיד ה-CSS?</p>
+                <label><input type="radio" name="q1" value="a"> לוגיקה בצד שרת</label>
+                <label><input type="radio" name="q1" value="b"> עיצוב וסגנון של ה-HTML</label>
+                <label><input type="radio" name="q1" value="c"> ניהול בסיס נתונים</label>
+            </div>
+
+            <div class="q">
+                <p>2) מה עושה event 'click'?</p>
+                <label><input type="radio" name="q2" value="a"> מגיב ללחיצה של המשתמש</label>
+                <label><input type="radio" name="q2" value="b"> מרנדר צד שרת</label>
+                <label><input type="radio" name="q2" value="c"> טוען קבצי CSS</label>
+            </div>
+
+            <div class="q">
+                <p>3) מה עושה <code>document.getElementById</code>?</p>
+                <label><input type="radio" name="q3" value="a"> מחזיר אלמנט לפי מזהה (id)</label>
+                <label><input type="radio" name="q3" value="b"> מפעיל סקריפט צד שרת</label>
+                <label><input type="radio" name="q3" value="c"> יוצר טופס חדש</label>
+            </div>
+
+            <div class="button-row">
+                <button type="button" id="gradeBtn" class="btn-primary">בדיקה</button>
+                <button type="button" id="resetBtn" class="btn-secondary">איפוס</button>
+            </div>
+        </form>
+
+        <div class="center-block">
+            <p class="score">ציון: —</p>
+        </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/quiz.js"></script>
+</body>
+</html>

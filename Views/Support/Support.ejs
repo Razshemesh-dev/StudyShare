@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/support.css">
+    </head>
+    <body>
+        <%- include('../partials/navbar') %>
+        
+        <h1>רשימת כלי עזר לסטודנט</h1>
+        
+        <div class="support-container">
+            <aside class="support-sidebar">
+                <h2>קטגוריות</h2>
+                <ul class="category-list">
+                    <li><a href="#ai-agents">סוכני AI</a></li>
+                    <li><a href="#academic-tools">כלים אקדמיים</a></li>
+                    <li><a href="#writing-tools">כלים כתיבה</a></li>
+                    <li><a href="#research-tools">כלים למחקר</a></li>
+                    <li><a href="#productivity-tools">כלים פרודוקטיביות</a></li>
+                    <li><a href="#collaboration-tools">כלים שיתופיים</a></li>
+                </ul>
+            </aside>
+
+            <main class="support-main">
+                <!-- סוכני AI -->
+                <section id="ai-agents" class="support-section">
+                    <h2>סוכני AI וחברויות AI</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>ChatGPT</h3>
+                            <p>סוכן AI חדישני לסיוע בכתיבה, פתרון בעיות ולימוד.</p>
+                            <ul class="features">
+                                <li>✓ עזרה בכתיבת עבודות</li>
+                                <li>✓ הסברים של קונספטים</li>
+                                <li>✓ פתרון תרגילים</li>
+                                <li>✓ ביצוע brainstorming</li>
+                            </ul>
+                            <a href="https://www.chatgpt.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Claude (Anthropic)</h3>
+                            <p>סוכן AI ברמה גבוהה עם ניתוח מעמיק של טקסטים.</p>
+                            <ul class="features">
+                                <li>✓ ניתוח מסמכים ארוכים</li>
+                                <li>✓ כתיבה אקדמית</li>
+                                <li>✓ קידוד וסיוע בתכנות</li>
+                                <li>✓ מחקר מעמיק</li>
+                            </ul>
+                            <a href="https://claude.ai" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Google Gemini</h3>
+                            <p>סוכן AI מאת Google עם יכולות ניתוח תמונות וטקסט.</p>
+                            <ul class="features">
+                                <li>✓ ניתוח תמונות מתמטיות</li>
+                                <li>✓ הסברים ויזואליים</li>
+                                <li>✓ עזרה בתרגילים</li>
+                                <li>✓ אינטגרציה עם Google Workspace</li>
+                            </ul>
+                            <a href="https://gemini.google.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Copilot (Microsoft)</h3>
+                            <p>סוכן AI משולב עם Office ו-Windows.</p>
+                            <ul class="features">
+                                <li>✓ עזרה בכתיבה ב-Word</li>
+                                <li>✓ עזרה בקידוד</li>
+                                <li>✓ ניתוח נתונים</li>
+                                <li>✓ סיוע בפרזנטציות</li>
+                            </ul>
+                            <a href="https://copilot.microsoft.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- כלים אקדמיים -->
+                <section id="academic-tools" class="support-section">
+                    <h2>כלים אקדמיים</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>Canvas</h3>
+                            <p>פלטפורמה לניהול קורסים המשמשת במוסדות רבים.</p>
+                            <ul class="features">
+                                <li>✓ גישה לחומרי הקורס</li>
+                                <li>✓ הגשת משימות</li>
+                                <li>✓ דיונים עם מרצים</li>
+                                <li>✓ צפיה בציונים</li>
+                            </ul>
+                            <a href="https://canvas.instructure.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Moodle</h3>
+                            <p>פלטפורמה פתוחה לניהול למידה.</p>
+                            <ul class="features">
+                                <li>✓ גישה למאגר הקורסים</li>
+                                <li>✓ בחירת קורסים</li>
+                                <li>✓ קבלת עדכונים</li>
+                                <li>✓ שיתופיות עם תלמידים</li>
+                            </ul>
+                            <a href="https://moodle.org" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Zoom</h3>
+                            <p>כלי וידאו קונפרנס לשיעורים וישיבות.</p>
+                            <ul class="features">
+                                <li>✓ שיעורים מקוונים</li>
+                                <li>✓ פגישות עם מנחים</li>
+                                <li>✓ הקלטת הרצאות</li>
+                                <li>✓ שרטוט בלוח</li>
+                            </ul>
+                            <a href="https://zoom.us" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Gradescope</h3>
+                            <p>כלי לניתוח וציון של משימות ובחינות.</p>
+                            <ul class="features">
+                                <li>✓ בחינות דיגיטליות</li>
+                                <li>✓ משוב מפורט</li>
+                                <li>✓ ניתוח כישול וקביעות</li>
+                                <li>✓ אינטגרציה עם LMS</li>
+                            </ul>
+                            <a href="https://www.gradescope.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- כלים כתיבה -->
+                <section id="writing-tools" class="support-section">
+                    <h2>כלים לכתיבה ועריכה</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>Grammarly</h3>
+                            <p>כלי בדיקת דקדוק ושיפור סגנון כתיבה.</p>
+                            <ul class="features">
+                                <li>✓ בדיקת כתיב והגייה</li>
+                                <li>✓ שיפור סגנון</li>
+                                <li>✓ בדיקת פלגיאט</li>
+                                <li>✓ הצעות כתיבה</li>
+                            </ul>
+                            <a href="https://www.grammarly.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Quillbot</h3>
+                            <p>כלי לשכתוב וניסוח טקסטים.</p>
+                            <ul class="features">
+                                <li>✓ שכתוב משפטים</li>
+                                <li>✓ השיפור סגנון</li>
+                                <li>✓ פישוט קורא</li>
+                                <li>✓ סיכום טקסטים</li>
+                            </ul>
+                            <a href="https://quillbot.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Hemingway Editor</h3>
+                            <p>כלי לכתיבה ברורה ותמציתית.</p>
+                            <ul class="features">
+                                <li>✓ בדיקת קריאות</li>
+                                <li>✓ זיהוי משפטים ארוכים</li>
+                                <li>✓ הצעות לשיפור</li>
+                                <li>✓ ניתוח סגנון</li>
+                            </ul>
+                            <a href="https://www.hemingwayapp.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Google Docs</h3>
+                            <p>כלי כתיבה שיתופי בענן.</p>
+                            <ul class="features">
+                                <li>✓ שיתוף מסמכים</li>
+                                <li>✓ עבודה בזמן אמת</li>
+                                <li>✓ הערות וביקורת</li>
+                                <li>✓ גיבוי אוטומטי</li>
+                            </ul>
+                            <a href="https://docs.google.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- כלים למחקר -->
+                <section id="research-tools" class="support-section">
+                    <h2>כלים למחקר וניהול הפניות</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>Zotero</h3>
+                            <p>כלי ניהול מראשית ופניות ביבליוגרפיות.</p>
+                            <ul class="features">
+                                <li>✓ ארגון מקורות</li>
+                                <li>✓ יצירת ביבליוגרפיות</li>
+                                <li>✓ הערות על מאמרים</li>
+                                <li>✓ שיתוף עם מחקרים</li>
+                            </ul>
+                            <a href="https://www.zotero.org" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Mendeley</h3>
+                            <p>ניהול מאמרים אקדמיים והפניות.</p>
+                            <ul class="features">
+                                <li>✓ ארגון מאמרים</li>
+                                <li>✓ הערות וקווים</li>
+                                <li>✓ ביבליוגרפיות אוטומטיות</li>
+                                <li>✓ שיתוף מחקר</li>
+                            </ul>
+                            <a href="https://www.mendeley.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Google Scholar</h3>
+                            <p>מנוע חיפוש לחומרים אקדמיים.</p>
+                            <ul class="features">
+                                <li>✓ חיפוש מאמרים</li>
+                                <li>✓ ציטוטים של יצירות</li>
+                                <li>✓ קישורים למאמרים</li>
+                                <li>✓ מעקב אחר ציטוטים</li>
+                            </ul>
+                            <a href="https://scholar.google.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>ResearchGate</h3>
+                            <p>רשת חברתית לחוקרים ודן בעבודות.</p>
+                            <ul class="features">
+                                <li>✓ חיפוש חוקרים</li>
+                                <li>✓ שיתוף עבודות</li>
+                                <li>✓ דיון עם חוקרים</li>
+                                <li>✓ מעקב אחר מאמרים</li>
+                            </ul>
+                            <a href="https://www.researchgate.net" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- כלים פרודוקטיביות -->
+                <section id="productivity-tools" class="support-section">
+                    <h2>כלים לפרודוקטיביות ותכנון</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>Notion</h3>
+                            <p>כלי ארגון וניהול פרויקטים.</p>
+                            <ul class="features">
+                                <li>✓ ארגון הערות</li>
+                                <li>✓ ניהול משימות</li>
+                                <li>✓ יומן לימודים</li>
+                                <li>✓ שיתוף עם חברים</li>
+                            </ul>
+                            <a href="https://www.notion.so" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Todoist</h3>
+                            <p>כלי ניהול משימות ופרויקטים.</p>
+                            <ul class="features">
+                                <li>✓ יצירת רשימות עבודה</li>
+                                <li>✓ קביעת סדרי עדיפויות</li>
+                                <li>✓ תזכורות</li>
+                                <li>✓ עקבות התקדמות</li>
+                            </ul>
+                            <a href="https://todoist.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Trello</h3>
+                            <p>כלי ניהול פרויקטים חזותי.</p>
+                            <ul class="features">
+                                <li>✓ לוחות פרויקטים</li>
+                                <li>✓ כרטיסים ויעדים</li>
+                                <li>✓ שיתוף עם הצוות</li>
+                                <li>✓ מעקב התקדמות</li>
+                            </ul>
+                            <a href="https://trello.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Toggl Track</h3>
+                            <p>כלי למעקב אחר זמן לימוד.</p>
+                            <ul class="features">
+                                <li>✓ מעקב זמן לימוד</li>
+                                <li>✓ דוחות זמן</li>
+                                <li>✓ ניתוח הפצת זמן</li>
+                                <li>✓ קביעת מטרות</li>
+                            </ul>
+                            <a href="https://toggl.com/track/" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- כלים שיתופיים -->
+                <section id="collaboration-tools" class="support-section">
+                    <h2>כלים לשיתופיות ותקשורת</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>Slack</h3>
+                            <p>פלטפורמה לתקשורת צוותית.</p>
+                            <ul class="features">
+                                <li>✓ ערוצי קבוצה</li>
+                                <li>✓ הודעות ישירות</li>
+                                <li>✓ שיתוף קבצים</li>
+                                <li>✓ משלוחים וקישורים</li>
+                            </ul>
+                            <a href="https://slack.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Microsoft Teams</h3>
+                            <p>כלי תקשורת וקולaborציה משלב.</p>
+                            <ul class="features">
+                                <li>✓ קבוצות וערוצים</li>
+                                <li>✓ וידאו קונפרנס</li>
+                                <li>✓ שיתוף קבצים</li>
+                                <li>✓ אינטגרציה עם Office</li>
+                            </ul>
+                            <a href="https://www.microsoft.com/teams" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Google Meet</h3>
+                            <p>כלי וידאו קונפרנס של Google.</p>
+                            <ul class="features">
+                                <li>✓ שיעורים מקוונים</li>
+                                <li>✓ ישיבות קבוצה</li>
+                                <li>✓ הקלטה</li>
+                                <li>✓ משוב ישיר</li>
+                            </ul>
+                            <a href="https://meet.google.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+
+                        <div class="support-card">
+                            <h3>Discord</h3>
+                            <p>פלטפורמה לתקשורת וקהילות.</p>
+                            <ul class="features">
+                                <li>✓ שרתי קבוצה</li>
+                                <li>✓ וידאו וקול</li>
+                                <li>✓ שיתוף תוכן</li>
+                                <li>✓ בוטים ותוספות</li>
+                            </ul>
+                            <a href="https://discord.com" target="_blank" class="support-btn">לכניסה לאתר</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <%- include('../partials/footer') %>
+    </body>
+</html>

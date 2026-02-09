@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רשימת משימות - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <h1>רשימת משימות לימוד</h1>
+
+    <main class="main_checklist">
+        <div class="container_list">
+            <input type="text" id="taskInput" placeholder="כתוב משימה">
+            <button id="addTask" class="btn-primary">הוסף</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </main>
+
+    <%- include('../partials/footer') %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/checklist.js"></script>
+</body>
+</html>

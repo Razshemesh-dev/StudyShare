@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/buttons.css">
+    </head>
+    <body>
+        <%- include('../partials/navbar') %>
+        <h1>הוספת שאלה מבחינה</h1>
+        <form class="input_form" method="post" action="/saveQuestion">
+            <p>מלא את הפרטים הבאים:</p>
+            <p>
+                <label for="subject">נושא השאלה: </label>
+                <input type="text" name="subject" placeholder="הכנס נושא" required>
+            </p>
+            <p>
+                <label for="author_name">כותב השאלה: </label>
+                <input type="text" name="author_name" placeholder="הכנס שם כותב" required>
+            </p>
+            <p>
+                <label for="education_institute">מוסד לימודים: </label>
+                <input type="text" name="education_institute" placeholder="הכנס מוסד לימודים">
+            </p>
+            <p>
+                <label for="difficulty_level">רמת קושי: </label>
+                <select name="difficulty_level">
+                    <option value="easy">קל</option>
+                    <option value="medium" selected>בינוני</option>
+                    <option value="hard">קשה</option>
+                </select>
+            </p>
+            <p>
+                <label for="question_text">השאלה: </label>
+                <textarea name="question_text" placeholder="הכנס את השאלה" required></textarea>
+            </p>
+            <p>
+                <label for="answer_text">תשובה:</label><br>
+                <textarea name="answer_text" id="answer_text" rows="4" cols="50" required></textarea><br>
+            </p>
+            <p><input class="btn-primary" type="submit" value="שלח"></p>
+        </form>
+        <%- include('../partials/footer') %>
+        <script src="/JS/add_question.js"></script>
+    </body>
+</html>

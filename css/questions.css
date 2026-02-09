@@ -1,0 +1,214 @@
+/* Questions/Search Questions Page Styling */
+
+body {
+  background-image: url('/images/LayoutBackground.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Main container for questions page */
+.questions-container {
+  max-width: 95%;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 248, 255, 0.98) 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Title styling */
+.questions-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  direction: rtl;
+}
+
+/* Table styling */
+.q_table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  direction: rtl;
+}
+
+.q_table thead {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.q_table thead th {
+  padding: 1rem 1.5rem;
+  text-align: right;
+  border-bottom: 2px solid #ecf0f1;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.q_table tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.q_table tbody tr:hover {
+  background-color: #f0f8ff;
+  box-shadow: inset 0 0 8px rgba(44, 62, 80, 0.08);
+  transform: scale(1.01);
+  transform-origin: center;
+}
+
+.q_table tbody td {
+  padding: 1.2rem 1.5rem;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.q_table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Empty state styling */
+.q_table tbody tr[colspan="6"] td {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Difficulty level badge styling */
+.difficulty-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  width: fit-content;
+}
+
+.difficulty-badge.easy {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.difficulty-badge.medium {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.difficulty-badge.hard {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Question and Answer text - display full text */
+.q_text {
+  max-width: 350px;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.a_text {
+  max-width: 350px;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.q_text:hover,
+.a_text:hover {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .questions-container {
+    padding: 1.5rem;
+  }
+
+  .q_table thead th,
+  .q_table tbody td {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .q_text,
+  .a_text {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .questions-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .q_table {
+    font-size: 0.8rem;
+  }
+
+  .q_table thead th,
+  .q_table tbody td {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .q_text,
+  .a_text {
+    max-width: 100px;
+  }
+
+  /* Hide less important columns on mobile */
+  .q_table th:nth-child(4),
+  .q_table th:nth-child(6),
+  .q_table td:nth-child(4),
+  .q_table td:nth-child(6) {
+    display: none;
+  }
+}
+
+/* Button alignment */
+.btn-add-question {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: fit-content;
+}
+
+.btn-add-question a {
+  display: inline-block;
+}
+
+/* No questions message */
+.no-questions {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.no-questions a {
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.no-questions a:hover {
+  text-decoration: underline;
+  color: #1a252f;
+}

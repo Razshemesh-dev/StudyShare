@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+
+    <main class="auth">
+        <h1>התחברות</h1>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+            <p class="auth__error"><%= error %></p>
+        <% } %>
+
+        <form class="input_form" action="/login" method="POST" novalidate>
+            <p>
+                <label for="username">שם משתמש</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    required
+                    autocomplete="username"
+                />
+            </p>
+
+            <p>
+                <label for="password">סיסמה</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    minlength="6"
+                    autocomplete="current-password"
+                />
+            </p>
+
+            <button type="submit">התחבר</button>
+        </form>
+
+        <p class="auth__switch">
+            אין לך חשבון?
+            <a class="register-login" href="/register">להרשמה</a>
+        </p>
+    </main>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

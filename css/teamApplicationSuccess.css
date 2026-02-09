@@ -1,0 +1,84 @@
+/* Team Application Success Page */
+
+body {
+  background-image: url('/images/LayoutBackground.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.success-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 3rem;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(52, 152, 219, 0.2);
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  animation: scaleIn 0.6s ease-out;
+}
+
+.success-title {
+  color: #27ae60;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.loading-text {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+.countdown {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .success-container {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .success-icon {
+    font-size: 3.5rem;
+  }
+
+  .success-title {
+    font-size: 1.6rem;
+  }
+
+  .success-message {
+    font-size: 1rem;
+  }
+}

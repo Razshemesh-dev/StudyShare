@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/buttons.css">
+        <link rel="stylesheet" href="/css/cards.css">
+        <link rel="stylesheet" href="/css/questions.css">
+    </head>
+    <body style="min-height: 100%; display: flex; flex-direction: column;">
+        <%- include('../partials/navbar') %>
+        
+        <div style="flex: 1;">
+            <div class="questions-container">
+                <h1>שאלות ממבחנים</h1>
+                
+                <button class="btn-a btn-add-question">
+                    <a class="btn-a" href="/add_question">הוסף שאלה למאגר</a>
+                </button>
+                
+                <% if (typeof questions === 'undefined' || questions.length == 0) { %>
+                    <div class="no-questions">
+                        <p>אין שאלות במאגר</p>
+                        <p><a href="/add_question">הוסף שאלה למאגר</a> כדי להתחיל</p>
+                    </div>
+                <% } else { %>
+                    <table class="q_table">
+                        <thead>
+                            <tr>
+                                <th>נושא</th>
+                                <th>כותב</th>
+                                <th>מוסד לימודים</th>
+                                <th>רמת קושי</th>
+                                <th>שאלה</th>
+                                <th>תשובה</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% questions.forEach(q => { %>
+                                <tr>
+                                    <td><strong><%= q.subject %></strong></td>
+                                    <td><%= q.author_name %></td>
+                                    <td><%= q.education_institute || '-' %></td>
+                                    <td>
+                                        <span class="difficulty-badge <%= (q.difficulty_level || 'medium').toLowerCase() %>">
+                                            <%= q.difficulty_level || 'medium' %>
+                                        </span>
+                                    </td>
+                                    <td class="q_text" title="<%= q.question_text %>"><%= q.question_text %></td>
+                                    <td class="a_text" title="<%= q.answer_text || '-' %>"><%= q.answer_text || '-' %></td>
+                                </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                <% } %>
+            </div>
+        </div>
+
+        <%- include('../partials/footer') %>
+    </body>
+</html>

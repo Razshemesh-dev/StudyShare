@@ -1,0 +1,100 @@
+h1 {
+  color: #365c71;
+  text-align: right;
+  margin: 20px 0;
+  font-size: 2.5em;
+}
+
+.mainsection {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.mainsection section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-right: 4px solid #008cba;
+  border-radius: 4px;
+}
+
+.mainsection section h2 {
+  color: #008cba;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.mainsection section p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1em;
+}
+
+.mainsection section ul {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.mainsection section li {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #555;
+  font-size: 1em;
+}
+
+.mainsection section li b {
+  color: #365c71;
+}
+
+form {
+  background-color: #eff6f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+form h3 {
+  color: #365c71;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px 0;
+  color: #365c71;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input[type="submit"] {
+  background-color: #365c71;
+  color: #f7edd7;
+  cursor: pointer;
+  font-weight: bold;
+  width: auto;
+  padding: 12px 30px;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2d4a5c;
+}

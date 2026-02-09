@@ -1,0 +1,294 @@
+/* Profile Styling - StudyShare */
+body {
+  background-image: url('/images/LayoutBackground.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main h1 {
+  color: white !important;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.center-block {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  direction: rtl;
+  font-family: "OpenSans", "Arial", "sans-serif";
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.profile-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.profile-card p strong {
+  color: #2c3e50;
+}
+
+/* Quiz */
+.q {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.q p {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.score {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+label:hover {
+  background-color: #e9ecef;
+}
+
+.correct {
+  background: #d4edda !important;
+  border: 2px solid #28a745;
+}
+
+.incorrect {
+  background: #f8d7da !important;
+  border: 2px solid #dc3545;
+}
+
+/* Average Score */
+.avg {
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.addLine {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#addBtn {
+  margin: 0;
+}
+
+#courseName {
+  flex: 2;
+  padding: 0.8rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+#courseGrade {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 100px;
+}
+
+.excellent {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #28a745;
+}
+
+.warning {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #dc3545;
+}
+
+.normal {
+  background: #fff3cd;
+  color: #856404;
+  border: 2px solid #ffc107;
+}
+
+.row {
+  background-color: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.row .cname {
+  font-weight: 600;
+  color: #2c3e50;
+  flex: 2;
+}
+
+.row .cgrade {
+  font-weight: bold;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.row .remove {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.row .remove:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+#errorBox {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Checklist */
+.task {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.done {
+  text-decoration: line-through;
+  color: #6c757d;
+  background-color: #e9ecef !important;
+  opacity: 0.7;
+}
+
+#taskInput {
+  flex: 3;
+  padding: 0.8rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+#addTask {
+  margin: 0;
+}
+
+.container_list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main_checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+main h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.quiz-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button-row {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-row .btn-secondary {
+  margin-right: 1rem;
+}

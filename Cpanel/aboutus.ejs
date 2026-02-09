@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8"/>
+    <title>About Us - StudyShare</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <link rel="stylesheet" href="CSS/styles_aboutus.css"/>
+</head>
+
+<body>
+    <header>
+    <section><a href="http://localhost:3000/"><img src="images/StudyshareLogo.png" id="logo" alt="StudyShare Logo"></a></section>
+    <button id="burger-menu" aria-label="Toggle menu">&#9776;</button>
+
+    <nav id="menu">
+        <a href="http://localhost:3000/add_summary" id="Summaries">סיכומים</a>
+        <a href="http://localhost:3000/add_review" id="Reviews">סקירות מערכות</a>
+        <a href="http://localhost:3000/search_questions" id="Questions">שאלות תשובות</a>
+    </nav>
+
+    </header>    
+
+    <h1>מי אנחנו</h1>
+    <main class="mainsection">
+        <section>
+            <p>ברוכים הבאים ל-<b>StudyShare</b> - קהילה אקדמית שמטרתה להנגיש ידע וחומרי לימוד לסטודנטים.</p>
+            <p>המערכת שלנו נולדה מתוך צורך אמיתי: לחסוך זמן בעבור סטודנטים, להשתף חומרים, שאלות ותשובות וחוות דעות על כלים דיגיטליים.</p>
+        </section>
+
+        <section>
+            <h2>החזון שלנו</h2>
+            <p>אנחנו שואפים להנגיש מידע אקדמי לקהל הרחב של סטודנטים, ולאפשר לכל משתמש: סטודנט, מרצה או חוקר - להפיק תועלת ממגוון סיכומים, שאלות ממבחנים, סקירות מערכות ומשק אישי נוח לשימוש.</p>
+        </section>
+
+        <section>
+            <h2>מה אנחנו מציעים?</h2>
+            <ul>
+                <li><b>סיכומים</b> - מאגר סיכומים מסודר לפי קורסים ומוסדות</li>
+                <li><b>שאלות ותשובות</b> - שאלות ממבחנים קודמים עם פתרונות</li>
+                <li><b>סקירות מערכות</b> - חוות דעות על כלים דיגיטליים וטכנולוגיות לימודיות</li>
+                <li><b>קהילה</b> - פלטפורמה לשיתוף ידע בין סטודנטים</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>איך זה עובד?</h2>
+            <p>המערכת מבוססת על Node.js ו-Express עם מאגר נתונים MySQL. משתמשים יכולים להוסיף סיכומים, שאלות וסקירות, חפש לפי קורס ומוסד לימוד, והנמך את החומרים הרלוונטיים.</p>
+        </section>
+
+        <section>
+            <h2>הצטרפות לצוות שלנו</h2>
+            <p>אם אתה מעוניין להשתתף בפיתוח וההרחבה של StudyShare, אנחנו משמחים להשמוע ממך!</p>
+            <form method="POST" action="aboutus.php">
+                <h3>טופס הצטרפות לצוות</h3>
+                
+                <label for="full_name">שם מלא:</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="email_adress">כתובת אימייל:</label>
+                <input type="email" id="email_adress" name="email_adress" required>
+
+                <label for="interest_area">תחום עניין:</label>
+                <select id="interest_area" name="interest_area" required>
+                    <option value="">בחר תחום</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="database">Database</option>
+                    <option value="design">Design</option>
+                    <option value="content">Content</option>
+                </select>
+
+                <label for="about_you">ספר לנו עלייך:</label>
+                <textarea id="about_you" name="about_you" required></textarea>
+
+                <label for="type_of_degree">סוג התואר:</label>
+                <input type="text" id="type_of_degree" name="type_of_degree" required>
+
+                <label for="degree_title">כותרת התואר:</label>
+                <input type="text" id="degree_title" name="degree_title" required>
+
+                <label for="hours_per_week">שעות זמינות בשבוע:</label>
+                <input type="number" id="hours_per_week" name="hours_per_week" min="1" max="45" required>
+
+                <input type="submit" value="שלח">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudyShare - כל הזכויות שמורות</p>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/aboutus.js"></script>
+</body>
+</html>

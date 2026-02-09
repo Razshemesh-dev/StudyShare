@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/buttons.css">
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/cards.css">
+    </head>
+    <body>
+        <%- include('../partials/navbar') %>
+        
+        <h1>סיכומים</h1>
+        <div class="container">
+            <aside class="filters">
+                <button class="btn-a btn-add-summary">
+                    <a class="btn-a" href="/add_summary">הוסף סיכום למאגר</a>
+                </button>
+
+                <form method="GET" action="/summaries_view" class="filter-form">
+                    <fieldset class="filter-group">
+                        <legend><b>מוסד לימודים:</b></legend>
+                        <% if (options && options.institutes) { %>
+                            <% options.institutes.forEach(inst => { %>
+                                <label>
+                                    <input type="checkbox" name="education_institute[]" value="<%= inst %>"
+                                        <%= filters && filters.education_institute && filters.education_institute.includes(inst) ? 'checked' : '' %>>
+                                    <%= inst %>
+                                </label><br>
+                            <% }) %>
+                        <% } %>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend><b>שם כותב:</b></legend>
+                        <input type="text" name="author_name" placeholder="הקלד שם כותב..."
+                            value="<%= filters && filters.author_name ? filters.author_name : '' %>">
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend><b>שנה:</b></legend>
+                        <input type="text" name="education_year" placeholder="הקלד שנה..."
+                            value="<%= filters && filters.education_year ? filters.education_year : '' %>">
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend><b>סמסטר:</b></legend>
+                        <input type="text" name="semester" placeholder="הקלד סמסטר..."
+                            value="<%= filters && filters.semester ? filters.semester : '' %>">
+                    </fieldset>
+                    
+                    <div class="filter-buttons">
+                        <button type="submit" class="btn-primary">סנן</button>
+                        <a href="/summaries_view" class="btn-secondary">נקה סינון</a>
+                    </div>
+                </form>
+            </aside>
+
+            <main class="mainsection">
+                <% if (summaries && summaries.length > 0) { %>
+                    <% summaries.forEach(summary => { %>
+                        <div class="summary-list">
+                            <h3><%= summary.summary_name %></h3>
+                            <p><b>כותב:</b> <%= summary.author_name %></p>
+                            <p><b>מוסד:</b> <%= summary.education_institute %></p>
+                            <p><b>שנה:</b> <%= summary.education_year %></p>
+                            <p><b>סמסטר:</b> <%= summary.semester %></p>
+                            <a href="/view/<%= summary.summary_name %>" target="_blank" class="btn-primary">הורדה</a>
+                        </div>
+                    <% }) %>
+                <% } else { %>
+                    <p>לא נמצאו סיכומים.</p>
+                <% } %>
+            </main>
+        </div>
+
+        <%- include('../partials/footer') %>
+        <script src="/JS/summaries.js"></script>
+    </body>
+</html>

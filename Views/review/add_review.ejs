@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/buttons.css">
+    </head>
+    <body>
+        <%- include('../partials/navbar') %>
+        
+        <main class="mainsection">
+            <h1>הוספת סקירה חדשה</h1>
+            <form method="post" action="/saveReview" class="input_form">
+                <p>
+                    <label>שם כלי:</label>
+                    <input type="text" name="tool_name" required>
+                </p>
+                <p>
+                    <label>תיאור הסקירה:</label>
+                    <textarea name="review_text" required></textarea>
+                </p>
+                <p>
+                    <label>שם כותב:</label>
+                    <input type="text" name="author_name" required>
+                </p>
+                <p>
+                    <label>קטגוריית הכלי:</label>
+                    <input type="text" name="tool_category" required>
+                </p>
+                <p>
+                    <label>יתרונות וחסרונות:</label>
+                    <textarea name="pros_cons" placeholder="יתרונות: ...
+חסרונות: ..."></textarea>
+                </p>
+                <p>
+                    <label>דירוג (1-5):</label>
+                    <input type="number" name="rating" min="1" max="5" required>
+                </p>
+                <p>
+                    <input type="submit" value="שמור סקירה" class="btn-primary">
+                </p>
+            </form>
+        </main>
+        
+        <%- include('../partials/footer') %>
+        <script src="/JS/add_review.js"></script>
+    </body>
+</html>

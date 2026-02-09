@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון ממוצע ציונים - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <h1>מחשבון ממוצע ציונים</h1>
+
+    <main>
+        <div class="content-wrap">
+            <section class="addLine">
+                <input id="courseName" type="text" placeholder="שם הקורס">
+                <input id="courseGrade" type="number" placeholder="ציון (0-100)" min="0" max="100">
+                <button id="addBtn" class="btn-primary">הוסף</button>
+            </section>
+            <p id="errorBox"></p>
+
+            <div class="center-block">
+                <p id="avgDisplay" class="score avg normal">ממוצע: —</p>
+            </div>
+
+            <ul id="gradeList" class="list-reset"></ul>
+        </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/average_score.js"></script>
+</body>
+</html>

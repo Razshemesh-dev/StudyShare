@@ -1,0 +1,112 @@
+/* Container & Layout */
+body {
+  background-image: url('/images/LayoutBackground.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+/* Container with filters should be side-by-side */
+.container:has(.filters) {
+  flex-direction: row;
+}
+
+/* Container without filters should stack vertically */
+.container:not(:has(.filters)) {
+  flex-direction: column;
+}
+
+.filters {
+  flex: 0 0 25%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filter-group {
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f8fbff;
+}
+
+.filter-group legend {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.filter-group input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.filter-group input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  direction: rtl;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.filter-group input[type="text"]:focus {
+  outline: none;
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.1);
+}
+
+.filter-group input[type="text"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.filter-buttons button,
+.filter-buttons a {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons .btn-primary {
+  width: 100%;
+}
+
+.filter-buttons .btn-secondary {
+  width: 100%;
+  text-align: center;
+}

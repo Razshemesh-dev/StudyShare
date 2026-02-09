@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרופיל משתמש - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+<%- include('../partials/navbar') %>
+
+<main>
+    <h1>פרופיל משתמש</h1>
+    <div class="profile-container">
+        <div class="profile-card">
+            <p><strong>שם משתמש:</strong> <%= user.username %></p>
+            <p><strong>אימייל:</strong> <%= user.email %></p>
+            <p><strong>שם מלא:</strong> <%= user.full_name %></p>
+            <p><strong>מוסד לימודים:</strong> <%= user.education_institute %></p>
+            <p><strong>תפקיד:</strong> <%= user.user_role %></p>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="/average_score" class="btn-a">מחשבון ממוצע ציונים</a>
+            <a href="/checklist" class="btn-a" style="margin: 0 1rem;">רשימת משימות</a>
+            <a href="/quiz" class="btn-a">בוחן בתכנות WEB</a>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>
+</body>
+</html>
