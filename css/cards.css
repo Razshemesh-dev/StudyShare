@@ -67,3 +67,41 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .summary-list,
+  .review-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .summary-list h3,
+  .review-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .summary-list p,
+  .review-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .summary-list,
+  .review-card {
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .summary-list h3,
+  .review-card h2 {
+    font-size: 1rem;
+  }
+
+  .summary-list a,
+  .review-card a {
+    width: 100%;
+    text-align: center;
+  }
+}

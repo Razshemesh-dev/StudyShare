@@ -110,3 +110,63 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .container {
+    gap: 1rem;
+    max-width: 95%;
+    flex-direction: column !important;
+  }
+
+  .filters {
+    flex: 1;
+  }
+
+  .filter-group {
+    padding: 0.8rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .filter-buttons button,
+  .filter-buttons a {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    gap: 0.5rem;
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .filters {
+    padding: 1rem;
+  }
+
+  .filter-group {
+    padding: 0.6rem;
+  }
+
+  .filter-group input[type="text"] {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .filter-buttons button,
+  .filter-buttons a {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}

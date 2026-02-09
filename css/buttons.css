@@ -69,3 +69,29 @@ body {
   margin-bottom: 1.5rem;
   width: fit-content;
 }
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-a {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .btn-add-summary,
+  .btn-add-review,
+  .btn-add-question {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

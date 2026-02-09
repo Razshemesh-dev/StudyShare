@@ -93,3 +93,57 @@ body {
 .btn-primary:active {
   transform: translateY(0);
 }
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .input_form {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .input_form label {
+    font-size: 0.95rem;
+  }
+
+  .input_form input[type="text"],
+  .input_form input[type="email"],
+  .input_form input[type="password"],
+  .input_form input[type="number"],
+  .input_form input[type="url"],
+  .input_form input[type="file"],
+  .input_form textarea {
+    font-size: 0.95rem;
+  }
+
+  .input_form input[type="submit"],
+  .btn-primary {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .input_form {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .input_form label {
+    font-size: 0.9rem;
+  }
+
+  .input_form input[type="text"],
+  .input_form input[type="email"],
+  .input_form input[type="password"],
+  .input_form input[type="number"],
+  .input_form input[type="url"],
+  .input_form input[type="file"],
+  .input_form textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .input_form textarea {
+    min-height: 80px;
+  }
+}
