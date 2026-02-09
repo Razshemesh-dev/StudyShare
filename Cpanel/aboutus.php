@@ -29,7 +29,7 @@ if ($full_name && $email_adress && $interest_area && $about_you && $type_of_degr
         $stmt->bind_param("ssssssi", $full_name, $email_adress, $interest_area, $about_you, $type_of_degree, $degree_title, $hours_per_week);
 
         if ($stmt->execute()) {
-            header("Location: http://localhost:3000/");
+            header("Location: http://vmedu432.mtacloud.co.il:3000/");
             exit();
         } else {
             echo "Error: " . $stmt->error;
