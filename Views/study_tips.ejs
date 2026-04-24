@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיפים ללמידה - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/extra_pages.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main class="page-main">
+        <header class="page-header">
+            <h1>טיפים ללמידה חכמה</h1>
+        </header>
+
+        <section class="content-grid">
+            <article class="tip-card" id="tipCard">
+                <h2>טיפ ללוח זמנים</h2>
+                <p>בחר יום ושעה קבועה ללמידה, ופצל את הזמן לחלקים קצרים.</p>
+                <button id="actionButton" class="action-button">הצג טיפ חדש</button>
+            </article>
+
+            <aside class="info-box">
+                <h2>משוב מהיר</h2>
+                <p id="statusMessage">לחץ על הכפתור כדי לקבל פידבק מותאם.</p>
+            </aside>
+        </section>
+
+    </main>
+    <%- include('partials/footer') %>
+    <script src="/JS/study_tips.js" defer></script>
+</body>
+</html>

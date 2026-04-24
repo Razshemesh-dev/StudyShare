@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const session = require('express-session');
 const app = express();
-//test
+
 // Configure EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'Views'));

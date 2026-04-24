@@ -149,6 +149,14 @@ router.get('/aboutus', (req, res, next) => {
     res.render('About/about_us');
 });
 
+router.get('/study_tips', (req, res, next) => {
+    res.render('study_tips');
+});
+
+router.get('/study_tools', (req, res, next) => {
+    res.render('study_tools');
+});
+
 // Route to download summary file
 router.get('/view/:summaryName', async (req, res, next) => {
     try {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כלי למידה - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/extra_pages.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main class="page-main">
+        <header class="page-header">
+            <h1>כלי למידה חכמים</h1>
+        
+        </header>
+
+        <section class="tool-grid">
+            <article class="tool-card">
+                <h2>מחברת דיגיטלית</h2>
+                <p>שמור רעיונות ומילים חשובות עם מבנה שקל לקרוא אחר כך.</p>
+                <button class="action-button tool-button" data-tool="מחברת דיגיטלית">למה זה טוב?</button>
+            </article>
+
+            <article class="tool-card">
+                <h2>מפת מושגים</h2>
+                <p>ארגן את הנושאים בקבוצה לפי נושא, קלה לשימוש כשמכינים שיעור.</p>
+                <button class="action-button tool-button" data-tool="מפת מושגים">למה זה טוב?</button>
+            </article>
+
+            <article class="tool-card">
+                <h2>פלייליסט לימוד</h2>
+                <p>בחר מוזיקה שקטה ומרגיעה לשעות ריכוז ארוכות.</p>
+                <button class="action-button tool-button" data-tool="פלייליסט לימוד">למה זה טוב?</button>
+            </article>
+
+            <article class="tool-card">
+                <h2>כרטיסיות סיכום</h2>
+                <p>סכם נקודות חשובות בפורמט קטן שנוח לחזור עליו.</p>
+                <button class="action-button tool-button" data-tool="כרטיסיות סיכום">למה זה טוב?</button>
+            </article>
+
+            <section class="tool-score">
+                <h2>הערכת כלי</h2>
+                <p id="toolResult">עדיין לא בחרת כלי. לחץ על אחד הכפתורים כדי לראות למה הוא טוב.</p>
+            </section>
+        </section>
+
+    </main>
+    <%- include('partials/footer') %>
+    <script src="/JS/study_tools.js" defer></script>
+</body>
+</html>
