@@ -1,5 +1,8 @@
 const toolButtons = document.querySelectorAll('.tool-button');
 const toolResult = document.getElementById('toolResult');
+const saveNoteButton = document.getElementById('saveNoteButton');
+const userNote = document.getElementById('userNote');
+const noteOutput = document.getElementById('noteOutput');
 
 const toolMessages = {
     'מחברת דיגיטלית': 'מחברת דיגיטלית טובה כי היא שומרת לך את הרעיונות במקום אחד וניתן לחזור אליהם בקלות.',
@@ -18,5 +21,19 @@ if (toolButtons.length && toolResult) {
             toolButtons.forEach(btn => btn.classList.remove('button-active'));
             button.classList.add('button-active');
         });
+    });
+}
+
+if (saveNoteButton && userNote && noteOutput) {
+    saveNoteButton.addEventListener('click', () => {
+        const noteText = userNote.value.trim();
+        if (!noteText) {
+            noteOutput.textContent = 'אנא כתוב משהו בתיבה לפני השמירה.';
+            return;
+        }
+
+        noteOutput.textContent = `התזכורת נשמרה: ${noteText}`;
+        noteOutput.style.color = '#27ae60';
+        userNote.value = '';
     });
 }
