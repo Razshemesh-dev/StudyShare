@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיפים ללמידה - StudyShare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/extra_pages.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    <main class="page-main">
+        <header class="page-header">
+            <h1>טיפים ללמידה חכמה</h1>
+        </header>
+
+        <section class="content-grid">
+            <article class="tip-card" id="tipCard">
+                <h2>טיפ ללוח זמנים</h2>
+                <p>בחר יום ושעה קבועה ללמידה, ופצל את הזמן לחלקים קצרים.</p>
+                <button id="actionButton" class="action-button">הצג טיפ חדש</button>
+            </article>
+
+            <aside class="info-box">
+                <h2>משוב מהיר</h2>
+                <p id="statusMessage">לחץ על הכפתור כדי לקבל פידבק מותאם.</p>
+            </aside>
+
+            <article class="tool-score">
+                <h2>הוסף טיפ משלך</h2>
+                <p>כתוב טיפ קצר שאותו תשמור ברשימה.</p>
+                <textarea id="userTip" rows="3" placeholder="הכנס כאן טיפ..." style="width:100%; border-radius:8px; border:1px solid #d0d7e7; padding:0.8rem; resize: vertical;"></textarea>
+                <button id="saveTipButton" class="action-button" style="margin-top:1rem;">הוסף טיפ לרשימה</button>
+                <h3 style="margin-top:1.5rem;">טיפים שלך</h3>
+                <ul id="tipsList" style="padding-inline-start: 1.2rem; color:#2c3e50;"></ul>
+            </article>
+        </section>
+
+    </main>
+    <%- include('../partials/footer') %>
+    <script src="/JS/new project/study_tips.js" defer></script>
+</body>
+</html>
