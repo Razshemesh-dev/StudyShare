@@ -150,11 +150,11 @@ router.get('/aboutus', (req, res, next) => {
 });
 
 router.get('/study_tips', (req, res, next) => {
-    res.render('newProject/study_tips');
+    res.render('newProjectShahar/study_tips');
 });
 
 router.get('/study_tools', (req, res, next) => {
-    res.render('newProject/study_tools');
+    res.render('newProjectShahar/study_tools');
 });
 
 // Route to download summary file
